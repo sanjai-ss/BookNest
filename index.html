@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>BookNest</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich dad poor dad</h2>
+            <h5>Robert Kiyosaki</h5>
+            <p>Rich Dad Poor Dad is Robert's story of growing up with two dads — 
+               his real father and the father of his best friend, his rich dad —
+               and the ways in which both men shaped his thoughts about money and investing.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
